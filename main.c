@@ -7,10 +7,10 @@
 
 #define PASSWORD_LEN  4     // Duljina lozinke (fiksno 4 znaka)
 
-char password[PASSWORD_LEN + 1] = "1234";  // Trenutna lozinka (dodatan bajt za '\0')
+char password[PASSWORD_LEN + 1] = "1234";  // Trenutna lozinka 
 int changeMode = 0;                        // Zastavica: 1 = u tijeku promjena lozinke
 
-// Pinovi za LED i buzzer (pazi da su u CubeMX postavljeni kao Output, push-pull)
+// Pinovi za LED i buzzer 
 #define LED_GPIO_Port    GPIOA
 #define LED_Pin          GPIO_PIN_11
 #define BUZZER_GPIO_Port GPIOA
@@ -243,3 +243,4 @@ void Error_Handler(void)
   while (1) {      // ostani ovdje (fail-safe)
   }
 }
+
